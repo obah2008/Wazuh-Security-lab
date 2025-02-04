@@ -82,7 +82,7 @@ Ubuntu can be installed either by using a virtualization software or by download
   ```bash
   sudo apt update && sudo apt upgrade
 
-#### virtualization 
+#### Virtualization 
 - Download the latest Ubuntu Server ISO from the [official website](https://ubuntu.com/download/server).
 - Create a VM for Ubuntu Server and follow the installation guide.
 - Once installed, update your system:
