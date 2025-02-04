@@ -72,7 +72,7 @@ Must have before starting the project
 
 ### Step 1: Install Ubuntu
 
-Ubuntu can be installed either by using a virtualization software or by downloading and installing the ISO directly on a PC(Bare metal installation). I'll be using the later.
+Ubuntu can be installed either by using a virtualization software or by downloading and installing the ISO directly on a PC(Bare metal installation). I'll be using the latter.
 
 #### Bare metal
 
