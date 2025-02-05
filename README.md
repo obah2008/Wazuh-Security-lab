@@ -60,6 +60,7 @@ Must have before starting the project
 - A PC that meets the minimum system requirements to run Wazuh locally
 - A Windows ISO
 - A kali Linux ISO
+- Docker(optional)
 
 ### Skill Prerequisites(knowledge):
 
@@ -89,3 +90,15 @@ Ubuntu can be installed either by using a virtualization software or by download
   ```bash
   sudo apt update && sudo apt upgrade
 
+
+### Step 2: Install Wazuh on Ubuntu
+
+- Head over to [Wazuh documentation](https://documentation.wazuh.com/current/quickstart.html) for a detailed installation guide.
+- One the Ubuntu terminal use the command 
+  ```bash
+   curl -sO https://packages.wazuh.com/4.10/wazuh-install.sh && sudo bash ./wazuh-install.sh -
+- Once Wazuh has finshed it's installation process, copy the username and password
+- To find your severs ip address, use the command
+```bash
+  ip ad s
+- cop   
