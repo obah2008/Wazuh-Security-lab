@@ -59,7 +59,7 @@ Must have before starting the project
 - A 64-bit operating system that supports Wazuh server(in this case Ubuntu)
 - A PC that meets the minimum system requirements to run Wazuh locally
 - A Windows ISO
-- A kali Linux ISO
+- A Ubuntu ISO
 - Docker(optional)
 
 ### Skill Prerequisites(knowledge):
@@ -108,3 +108,19 @@ Ubuntu can be installed either by using a virtualization software or by download
 ### Step 3: Deploying Wazuh agents
 Wazuh agents can be deployed on several platforms for endpoint detection, log accumulation and Threat-hunting. Not only can docker be run on serveral different Operating Systems it can also be run on a variety of platforms.
 
+#### Deploying an agent from a virtual machine(Linux)
+-
+-
+-
+-
+
+#### Deploying agents from a seperate physical(Windows) 
+-
+-
+-
+-
+#### Deploying agents from a container(Ubuntu)
+-
+-
+-
+-
