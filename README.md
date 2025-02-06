@@ -103,3 +103,8 @@ Ubuntu can be installed either by using a virtualization software or by download
   ip ad s
  Copy the the IP address and paste it in you web browser.
 - Log into the Wazuh web interface: Once on the Wazuh web log in screen, enter you the username and password copied earlier. 
+
+
+### Step 3: Deploying Wazuh agents
+Wazuh agents can be deployed on several platforms for endpoint detection, log accumulation and Threat-hunting. Not only can docker be run on serveral different Operating Systems it can also be run on a variety of platforms.
+
