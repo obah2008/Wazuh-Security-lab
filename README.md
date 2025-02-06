@@ -94,11 +94,12 @@ Ubuntu can be installed either by using a virtualization software or by download
 ### Step 2: Install Wazuh on Ubuntu
 
 - Head over to [Wazuh documentation](https://documentation.wazuh.com/current/quickstart.html) for a detailed installation guide.
-- One the Ubuntu terminal use the command 
+- Run the installation script: On the Ubuntu terminal use the command 
   ```bash
    curl -sO https://packages.wazuh.com/4.10/wazuh-install.sh && sudo bash ./wazuh-install.sh -
-- Once Wazuh has finshed it's installation process, copy the username and password
-- To find your severs ip address, use the command
-```bash
+- Save login credentials: Once The installation process is complete, copy the username and password
+- Find The server's IP address: To find your severs ip address, use the command
+   ```bash
   ip ad s
-- cop   
+ Copy the the IP address and paste it in you web browser.
+- Log into the Wazuh web interface: Once on the Wazuh web log in screen, enter you the username and password copied earlier. 
