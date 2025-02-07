@@ -109,15 +109,36 @@ Ubuntu can be installed either by using a virtualization software or by download
 Wazuh agents can be deployed on several platforms for endpoint detection, log accumulation and Threat-hunting. Not only can docker be run on serveral different Operating Systems it can also be run on a variety of platforms.
 
 #### Deploying an agent on Linux
-- 
--
--
--
+- Head to the Wazuh server, on the overview page select deploy new agent
+- Select the operating system and architecture for the new agent, I'm using Ubuntu hence I'll select Deb amd 64
+- Assign a Server address: type in the address you copied earlier(the address that was used to access the dashboard)
+- Assign agent name: It's optional but you can assign an agent name that uniquely identifies the new agent 
+- Download and install the agent: On the ubuntu terminal, run the command 
+  ```bash
+   wget https://packages.wazuh.com/4.x/apt/pool/main/w/wazuh-agent/wazuh-agent_4.10.1-1_amd64.deb && sudo WAZUH_MANAGER='your server's address' dpkg -i ./wazuh-agent_4.10.1-1_amd64.deb
+- Start the agent by running the following commands
+  ```bash
+  sudo systemctl daemon-reload
+  sudo systemctl enable wazuh-agent
+  sudo systemctl start wazuh-agent
+- Verify the agent is up and running: to verify the statud of the agent use the command
+  ```bash
+  sudo systemctl status wazuh-agent
+
 #### Deploying agents on Windows
--
--
--
--
+- Deploy a new agent by following the same process as above 
+- Select operating system: choose Windows under the, select package to download menu
+- Assign Server IP address: copy the address of the wazuh server and paste it here
+- Assign an agent name: Again this field is optional, if you do not fill it out Wazuh will use the agent's hostname to identify the agent
+- Select one or more existing groups: Another optional field used to group agents together. 
+- On powershell run the following command to download and install the agent 
+     ```bash
+     Invoke-WebRequest -Uri https://packages.wazuh.com/4.x/windows/wazuh-agent-4.10.1-1.msi -OutFile $env:tmp\wazuh-agent; msiexec.exe /i $env:tmp\wazuh-agent /q WAZUH_MANAGER='your server's ip address'
+ change "your server's ip address' to the actual ip address of your Wazuh server
+- Verify the agent is running using the command
+  ```bash 
+   Get-Service -Name WazuhSvc
+
 #### Deploying agents from a container(Ubuntu)
 -
 -
