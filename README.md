@@ -108,13 +108,12 @@ Ubuntu can be installed either by using a virtualization software or by download
 ### Step 3: Deploying Wazuh agents
 Wazuh agents can be deployed on several platforms for endpoint detection, log accumulation and Threat-hunting. Not only can docker be run on serveral different Operating Systems it can also be run on a variety of platforms.
 
-#### Deploying an agent from a virtual machine(Linux)
+#### Deploying an agent on Linux
+- 
 -
 -
 -
--
-
-#### Deploying agents from a seperate physical(Windows) 
+#### Deploying agents on Windows
 -
 -
 -
