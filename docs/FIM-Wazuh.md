@@ -1,18 +1,26 @@
-File Integrity monitoring watches selected directories and files for modifications and alterations, this is useful
+# File integrity and monitoring with Wazuh
 
-## Navigate to Ossec 
+# What is FIM
 
-###Linux
+File Integrity  and monitoringis a security feature that detects and watches changes to selected directories and files. It's useful for detecting malware and monitoring the activities of attackers in public directories.
+
+## Navigate to the Ossec directory  
+
+### Linux
+To navigate to the ossec terminal on Linux, open the terminal and Use the command
 
     ```bash
     sudo nautilus /var/ossec/etc/
 
 
-###Windows
- 
+### Windows
+ For Windows, open File Explorer and navigate to:
+
+C:\Program Files (x86)\ossec-agent\
+
 
 ## Edit ossec.conf file
-- make copy of file 
-- Open file with Notepad or text editor(linux)
+- make copy of the file to use as a backup
+- Open file with Notepad(windows) or text editor(linux)
 
-Guide Video
+Guide Video [Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
