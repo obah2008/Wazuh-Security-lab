@@ -1,4 +1,4 @@
-## Lab setup
+# Lab setup
 
 ### Step 1: Install Ubuntu
 
