@@ -11,7 +11,6 @@ File Integrity  and monitoringis a security feature that detects and watches cha
 #### Linux
 To navigate to the ossec terminal on Linux, open the terminal and Use the command
 
-    ``` 
     sudo nautilus /var/ossec/etc/
 
 
@@ -50,5 +49,7 @@ use the command
 
 #### Windows
 - Open run using Win + R, type services.msc
-- Right click on the Wazuh service
+- Right click on the Wazuh service.
+
+
 [Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
