@@ -11,7 +11,7 @@ File Integrity  and monitoringis a security feature that detects and watches cha
 #### Linux
 To navigate to the ossec terminal on Linux, open the terminal and Use the command
 
-    ```bash
+    ``` 
     sudo nautilus /var/ossec/etc/
 
 
@@ -27,9 +27,14 @@ C:\Program Files (x86)\ossec-agent\
 
 #### Change the frequency at which syscheck looks for changes: 
 
-The default for this is 12 hours(43200s) to 10 minutes(600s) 
+The default for this is 12 hours(43200s) which is way too long for a personal project, so I'm going to change it to 10 minutes(600s) 
 
-##### Select the directories that syscheck will monitor
+#### Select the directories that syscheck will monitor
+Under default files to be monitored, copy and paste this
+    
+     <directories>file path</directories>
+
+Replace "file path" with the actual path of the file
 
 - Save and close the Ossec file
 
