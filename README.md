@@ -59,7 +59,7 @@ Must have before starting the project
 - A 64-bit operating system that supports Wazuh server(in this case Ubuntu)
 - A PC that meets the minimum system requirements to run Wazuh locally
 - A Windows ISO
-- A Ubuntu ISO
+- An Ubuntu ISO
 
 ### Skill Prerequisites(knowledge):
 
