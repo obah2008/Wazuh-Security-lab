@@ -66,7 +66,9 @@ to do this:
 - Restart Wazuh
 
 ### Step 2: Malware Implantation
-For this step I'll be using the EICAR test file
+For this step I'll be using the EICAR test file. The Eicar test file is a harmless test file used to check the functionality of antiviruses and other security tools
+
+- To enable Wazuh detect that the EICAR file is indeed malware
 
 ### Step 3:Check Wazuh for security alerts 
 
