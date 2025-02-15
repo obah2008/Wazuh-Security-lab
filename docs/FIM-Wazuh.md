@@ -51,10 +51,14 @@ use the command
 - Open run using Win + R, type services.msc
 - Right click on the Wazuh service.
 
-## Case 1: 
+
+## Case 1: Detecting malware with Wazuh
+Scenario: An attacker has implanted Malware within an important directory. we need to detect, analyze and respond to it using Wazuh's FIM
+
+
+## Case 2: 
 let's say we have an application that stores important passwords, we'll use FIM to monitor this file for changes
 
-## Case 2: Detecting malware with Wazuh
-Scenario: An attacker has implanted Malware within an important directory. we need to detect, analyze and respond to it using Wazuh's FIM
+
 
 [Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
