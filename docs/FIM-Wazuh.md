@@ -43,8 +43,6 @@ For the changes we've made in the Ossec.conf file to take effect, the Wazuh mana
 #### Linux
 use the command
 
-    ```bash
-    sudo systemctl restart wazuh-manager
     sudo systemctl restart wazuh-agent
 
 #### Windows
@@ -54,6 +52,25 @@ use the command
 
 ## Case 1: Detecting malware with Wazuh
 Scenario: An attacker has implanted Malware within an important directory. we need to detect, analyze and respond to it using Wazuh's FIM
+
+
+### Step 1: Select A directory to monitor
+For this I'll be choosing a directory with "sensitive" data. In my case it would be
+ /home/obah/Documents/important data
+ 
+to do this: 
+- Add a new entry under syscheck
+
+      <directories check_all="yes">/home/obah/Documents/important data</directories>
+- save the changes made to the ossec.conf file
+- Restart Wazuh
+
+### Step 2: Malware Implantation
+For this step I'll be using the EICAR test file
+
+### Step 3:Check Wazuh for security alerts 
+
+### Step 4: Enable Active response
 
 
 ## Case 2: 
