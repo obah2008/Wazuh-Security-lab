@@ -66,11 +66,20 @@ to do this:
 - Restart Wazuh
 
 ### Step 2: Malware Implantation
-For this step I'll be using the EICAR test file. The Eicar test file is a harmless test file used to check the functionality of antiviruses and other security tools
+For this step I'll be using the EICAR test file. The Eicar test file is a harmless non malicious test file used to check the functionality of antiviruses and other security tools.
 
-- To enable Wazuh detect that the EICAR file is indeed malware
+- Navigate to the monitored directory: on the linux terminal, Use the command
+     
+        cd /home/obah/Documents/"important data"
+- Download the EICAR file with the command
 
-### Step 3:Check Wazuh for security alerts 
+       curl -O https://secure.eicar.org/eicar.com
+
+
+### Step 3:Check Wazuh for security alerts
+To enable Wazuh detect that the EICAR file is indeed malware, I'll be using VirusTotal. VirusTotal is a service that analyses files and URLs for potential threats.
+ 
+-
 
 ### Step 4: Enable Active response
 
