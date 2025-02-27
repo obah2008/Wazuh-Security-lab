@@ -88,5 +88,9 @@ To enable Wazuh detect that the EICAR file is indeed malware, I'll be using Viru
 let's say we have an application that stores important passwords, we'll use FIM to monitor this file for changes
 
 
+## Case 3: FIM exclusions
+Scenario: by nature some files change very often, to prevent an over agg
+
+
 
 [Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
