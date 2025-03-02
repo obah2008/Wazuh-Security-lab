@@ -69,12 +69,20 @@ to do this:
 For this step I'll be using the EICAR test file. The Eicar test file is a harmless non malicious test file used to check the functionality of antiviruses and other security tools.
 
 - Navigate to the monitored directory: on the linux terminal, Use the command
-     
+
+
+
         cd /home/obah/Documents/"important data"
+
 - Download the EICAR file with the command
 
-       curl -O https://secure.eicar.org/eicar.com
+Linux
 
+      curl -O https://secure.eicar.org/eicar.com
+
+Windows
+
+Download the EICAR file from [download EICAR](https://www.eicar.org/download-anti-malware-testfile/)
 
 ### Step 3:Check Wazuh for security alerts
 To enable Wazuh detect that the EICAR file is indeed malware, I'll be using VirusTotal. VirusTotal is a service that analyses files and URLs for potential threats.
