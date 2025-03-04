@@ -21,7 +21,7 @@ C:\Program Files (x86)\ossec-agent\
 
 
 ### Edit ossec.conf file
-- Make a copy of the file to use as a backup
+- Make a copy of the file to use as a backup(very important!!!. Learnt that the hard way)
 - Open the file with Notepad(windows) or text editor(linux)
 
 #### Change the frequency at which syscheck looks for changes: 
@@ -85,11 +85,24 @@ Windows
 Download the EICAR file from [download EICAR](https://www.eicar.org/download-anti-malware-testfile/)
 
 ### Step 3:Check Wazuh for security alerts
+On the Wazuh dashboard, navigate to the FIM event menu, we can see the new file that has been added, but the SIEM tool is currently unable to detect that this file is malware.
 To enable Wazuh detect that the EICAR file is indeed malware, I'll be using VirusTotal. VirusTotal is a service that analyses files and URLs for potential threats.
  
--
+#### virustotal integration to wazuh
+-  Step 1: Get VirusTotal API key: log into the [Virustotal website](https://www.virustotal.com) and copy the API key
+-  Step 2: configure Virustotal integration on the wazuh manager: Navigate to the ossec.conf file on the wazuh manager and 
+   add this XML line at the right before the last line
+   ```
+     <integration>
+      <name>virustotal</name>
+      <api_key>API_KEY</api_key> 
+      <alert_format>json</alert_format>
+    </integration>                              
+-  Replace "API_key" with the virustotal API key and save the changes to the file
+- Restart the Wazuh-manager
 
-### Step 4: Enable Active response
+  
+ ### Step 4: Enable Active response
 
 
 ## Case 2: 
@@ -99,6 +112,6 @@ let's say we have an application that stores important passwords, we'll use FIM 
 ## Case 3: FIM exclusions
 Scenario: by nature some files change very often, to prevent an over agg
 
-
+### Creating FIM rules
 
 [Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
