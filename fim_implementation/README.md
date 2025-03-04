@@ -101,6 +101,7 @@ To enable Wazuh detect that the EICAR file is indeed malware, I'll be using Viru
 -  Replace "API_key" with the virustotal API key and save the changes to the file
 - Restart the Wazuh-manager
 
+Now we can put the EICAR file in the directory monitored by FIM, and Wazuh should now be able to detect it as malware.
   
  ### Step 4: Enable Active response
 
