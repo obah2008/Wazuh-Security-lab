@@ -2,7 +2,7 @@
 
 # What is FIM
 
-File Integrity  and monitoringis a security feature that detects and watches changes to selected directories and files. It's useful for detecting malware and monitoring the activities of attackers in public directories.
+File Integrity  and monitoringis a security feature that detects and watches changes to selected directories and files. It's useful for detecting malware and monitoring the activities of attackers.
 
 ## Setting up FIM in Wazuh
 
