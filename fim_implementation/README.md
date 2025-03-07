@@ -102,18 +102,10 @@ To enable Wazuh detect that the EICAR file is indeed malware, I'll be using Viru
 - Restart the Wazuh-manager
 
 Now we can put the EICAR file in the directory monitored by FIM, and Wazuh should now be able to detect it as malware.
+
+Under Malware detection option virustotal should flag the EICAR.com file as malware with a rule.id of 87105
   
-Side note: If you're using windows before you put the EICAR file in your monitored directory, turn off windows defender.
+Side note: If you're using windows, before you put the EICAR file in your monitored directory, turn off windows defender.
  ### Step 4: Enable Active response
 
 
-## Case 2: 
-let's say we have an application that stores important passwords, we'll use FIM to monitor this file for changes
-
-
-## Case 3: FIM exclusions
-Scenario: by nature some files change very often, to prevent an over agg
-
-### Creating FIM rules
-
-[Guide video](https://www.youtube.com/watch?v=aO2jUOFa9Hs&t=461s)
