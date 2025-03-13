@@ -11,4 +11,6 @@ The objectives of this project's subdomain are:
 - Set up an automated threat response
 
 ## What is a Brute-force attack??
-A brute-force attack involves going through every possible username and password combination to find the correct login details. The time a takes to attain the correct login details obviously depends on the password strength, a weak password could be gotten in a matter of seconds while a very secure one might take millions of years.
+A brute-force attack involves going through every possible username and password combination to find the correct login details. The time it takes to attain the correct credentials obviously depend on the password strength. A weak password could be gotten in a matter of seconds, while a complex one might take millions of years.
+
+## Setup 
