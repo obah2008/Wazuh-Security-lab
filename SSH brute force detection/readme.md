@@ -25,4 +25,4 @@ There are two ways to go about this:
 - Using a community prebuilt OVA: Although much faster and easier to use, it can be a security risk if downloaded from an unverified source.
 
 ### Set up Metasploitable 3 as a Wazuh agent 
-Since I'm using the Ubuntu version of Metasploitable, I'll add it the same way I did in the [Lab Setup]().
+Since I'm using the Ubuntu version of Metasploitable, I'll add it the same way I did in the [Lab Setup](https://github.com/obah2008/Wazuh-Security-lab/blob/main/docs/lab%20setup.md).
