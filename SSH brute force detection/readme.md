@@ -77,4 +77,13 @@ Like I mentioned earlier I'll be using Nmap a powerful reconnaissance tool.
    ``` bash
     nmap -sV -p <open-port> <target-ip>
 
-- The attacker finally has the SSH port and can begin brute-forcing 
+- The attacker finally has the SSH port and can begin brute-forcing
+ 
+## SSH Brute-Forcing
+Now that SSH is up and running, it's time to simulate an attack.
+
+- Change Password:
+ Since strong passwords take too long to brute-force, I'll change mine to something weak:
+
+
+
