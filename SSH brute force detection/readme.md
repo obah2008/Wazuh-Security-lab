@@ -59,4 +59,15 @@ Usually the SSH only listens on port 22 and is only available to devices on the 
   ``` bash
   sudo systemctl restart ssh
 
-## Network reconnaisance 
+## Network Reconnaissance 
+Now that we have SSH up and running, it's time to Put on that black hat. Let's assume that the attacker found the target IP address from shodan search or a phishing attack. so the next step is to gather information about the target system.
+
+### Scanning with Nmap
+Like I mentioned earlier I'll be using Nmap a powerful reconnaissance tool.
+
+- Since we already know the targets IP will run a scan to discover open ports and other information about the target 
+  ``` bash
+  nmap -a x.x.x.x
+
+- Now the attacker has a list of all the open ports on the target and would usually try port 22 since it's the default for SSH but to make things a tad bit more interesting I put SSH on a custom port.
+
