@@ -5,7 +5,7 @@ SSH or Secure shell is a network protocol that enables a secure remote access to
 ## Objectives
 The objectives of this project's subdomain are:
 
-- Set up Metasploitable as a Wazuh-agent
+- Set up Ubuntu as a Wazuh-agent
 - Use Kali linux and hydra to execute a brute force attack on the agents open SSH port
 - Analyze alerts on the Wazuh dashboard to practice intrusion detection and gain insights on the Threat actor
 - Set up an automated threat response
@@ -13,16 +13,14 @@ The objectives of this project's subdomain are:
 ## What is a Brute-force attack??
 A brute-force attack involves going through every possible username and password combination to find the correct login details. The time it takes to attain the correct credentials obviously depend on the password strength. A weak password could be gotten in a matter of seconds, while a complex one might take millions of years.
 
-## Setup 
-For this Lab I'll be using Metasploitable-an intentionally vulnerable machine created by metasploit, and Kali linux-a linux distro designed for security experts, to act as the Threat actor. I'll also be using tools like Nmap(for port scanning) and Hydra(for bruteforcing)
+## Lab Setup
+For this lab, I'll be using Ubuntu as the endpoint instead of Metasploitable3. Initially, I planned to use Metasploitable3 as the target machine, but due difficulties during the setup, I decided to switch to Ubuntu.
 
-### Setting up Metasploitable 3
+I'll also be using Kali Linux, a security-focused Linux distribution, as the threat actor. The following tools will be used:
 
-There are two ways to go about this:
+Nmap – for port scanning
+Hydra – for brute-force attacks
+Although I’m not using Metasploitable3 for this project, I still plan to work with it in future security labs.
 
-- Build your own OVA file: this is rather complicated so I won't go over how to do it here. Luckily Hackersploit made a great video about how to do it, check it out [here](https://www.youtube.com/watch?v=errn34YrEjM&t=247s)
 
-- Using a community prebuilt OVA: Although much faster and easier to use, it can be a security risk if downloaded from an unverified source.
 
-### Set up Metasploitable 3 as a Wazuh agent 
-Since I'm using the Ubuntu version of Metasploitable, I'll add it the same way I did in the [Lab Setup](https://github.com/obah2008/Wazuh-Security-lab/blob/main/docs/lab%20setup.md).
