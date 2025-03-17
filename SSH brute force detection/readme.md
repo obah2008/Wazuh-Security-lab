@@ -25,7 +25,12 @@ I'll also be using Kali Linux, a linux distro designed for security experts, as 
 Although I’m not using Metasploitable3 for this project, I still plan to work with it in future security labs.
 
 ### Setting up the Ubuntu Endpoint
-I'm not going to go deep into this since I've already covered it in the [Lab Setup](). If you need a detailed guide on how to do this refer to that section
+I'm not going to go deep into this since I've already covered it in the [Lab Setup](). If you need a detailed guide on how to do this refer to that section.
+
+### Network configuration
+Since I need both the attacker(Kali) and target(Ubuntu) to be able to communicate with each other in an isolated environment, I'll be using the host only Network configuration.
+
+
 
 
 
