@@ -30,7 +30,33 @@ I'm not going to go deep into this since I've already covered it in the [Lab Set
 ### Network configuration
 Since I need both the attacker(Kali) and target(Ubuntu) to be able to communicate with each other in an isolated environment, I'll be using the host only Network configuration.
 
+### Setting up SSH
+SSH is not setup by default on the Ubuntu endpoint, so I'll have to do it manually.
 
+- The first step is to install the OpenSSH server with the command below
+  ``` bash
+   sudo apt install openssh-server 
 
+- Next start the service with:
+  ``` bash
+  sudo service ssh start
 
+- Allow SSH through firewall: Ensure UFW isn't stopping any SSH traffic
+  ``` bash
+   sudo ufw allow ssh
+   sudo ufw reload
 
+#### Allow SSH to listen on all ports
+Usually the SSH only listens on port 22 and is only available to devices on the same network as the client, But if we allow SSH to listen on all ports, anyone can gain access. Since I'm doing this in a controlled environment, I'll configure SSH to listen on all ports.
+
+- Modify the SSH configuration file: using the nano command
+   ``` bash
+  sudo nano /etc/ssh/sshd_config
+
+- Configure SSH to listen on all ports: On the configuration file change the "#port 22" to "port 0"
+
+- Restart the SSH service
+  ``` bash
+  sudo systemctl restart ssh
+
+## Network reconnaisance 
