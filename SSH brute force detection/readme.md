@@ -16,7 +16,7 @@ A brute-force attack involves going through every possible username and password
 ## Lab Setup
 For this lab, I'll be using Ubuntu as the endpoint instead of Metasploitable3. Initially, I planned to use Metasploitable3 as the target machine, but due difficulties during the setup, I decided to switch to Ubuntu.
 
-I'll also be using Kali Linux, a security-focused Linux distribution, as the threat actor. The following tools will be used:
+I'll also be using Kali Linux, a linux distro designed for security experts, as the threat actor. The following tools will be used:
 
 - Nmap – for port scanning
 
