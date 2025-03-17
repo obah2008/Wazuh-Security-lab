@@ -70,5 +70,11 @@ Like I mentioned earlier I'll be using Nmap a powerful reconnaissance tool.
   nmap -a x.x.x.x
 
 - Now the attacker has a list of all the open ports on the target and would usually try port 22 since it's the default for SSH but to make things a tad bit more interesting I put SSH on a custom port.
- ``` bash
- nmap -p- x.x.x.x
+  ``` bash
+   nmap -p- x.x.x.x
+
+- The attacker now has a list of the open ports. and would search for OpenSSH with
+   ``` bash
+    nmap -sV -p <open-port> <target-ip>
+
+- The attacker finally has the SSH port and can begin brute-forcing 
