@@ -18,8 +18,10 @@ For this lab, I'll be using Ubuntu as the endpoint instead of Metasploitable3. I
 
 I'll also be using Kali Linux, a security-focused Linux distribution, as the threat actor. The following tools will be used:
 
-Nmap – for port scanning
-Hydra – for brute-force attacks
+- Nmap – for port scanning
+
+- Hydra – for brute-force attacks
+
 Although I’m not using Metasploitable3 for this project, I still plan to work with it in future security labs.
 
 
