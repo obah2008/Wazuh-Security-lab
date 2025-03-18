@@ -99,3 +99,5 @@ Now that SSH is up and running, it's time to simulate an attack.
 This outcome was expected since SSH by default has an account lockout policy after every 6 attempts. 
 
 However, the main goal was to generate "noise" and trigger security alerts for incident response.
+
+Incident Response
