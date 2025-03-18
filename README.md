@@ -29,9 +29,11 @@ You can learn more about Wazuh [Wazuh official website](https://wazuh.com)
 - [Prerequisites](#prerequisites)
 - [Lab Setup](#lab-setup)
 - [Tools Used](#tools-used)
-- [Configuration](#configuration)
-- [Queries](#queries)
+- [Configuration](https://github.com/obah2008/Wazuh-Security-lab/tree/main/docs)
 - [Dashboards](https://github.com/obah2008/Wazuh-Security-lab/blob/main/docs/Creating%20Dashboards.md)
+- [SOAR implemetation]()
+- [FIM implementation]()
+- [SSH Brute-force detection]()
 - [Acknowledgements](#acknowledgements)
 
 
