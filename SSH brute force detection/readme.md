@@ -109,11 +109,28 @@ The first step in incident response is to detect any suspicious activity related
 ### Check for failed login attempts
   On the target machine, use the following command to check authentication logs for failed SSH login attempts
 
-    ``` bash
+    
      sudo grep "Failed password" /var/log/auth.log
 
 Head over to the Wazuh Dashboard, under Threat Detection, where we can see several failed SSH login attempts. 
 
 Now It's time to respond to the attacks.
 ![image](https://github.com/user-attachments/assets/5cca435d-1798-444b-bfcb-2d35d9b22934)
+
+### Response
+- Identify the attacker IP address: We can expand on any of the failed SSH login logs and see  the attacker's IP address
+![image](https://github.com/user-attachments/assets/2c5b3473-1a33-4634-9b06-795395954db0)
+
+- Block the attackers IP address: Now We have the attacker's IP address we can set a firewall rule to block that IP address using UFW(Uncomplicated Firwall):
+
+      sudo ufw deny from <attacker-ip>
+![image](https://github.com/user-attachments/assets/77b77241-dafa-4e8a-a70a-b6a211556e14)
+
+- Install Fail2ban to prevent brute-force attacks from other Threat actors: Fail2ban 
+
+        sudo apt install fail2ban -y
+        sudo systemctl enable --now fail2ban
+
+
+
 
