@@ -108,6 +108,7 @@ The first step in incident response is to detect any suspicious activity related
 
 ### Check for failed login attempts
   On the target machine, use the following command to check authentication logs for failed SSH login attempts
+
     ``` bash
      sudo grep "Failed password" /var/log/auth.log
 
