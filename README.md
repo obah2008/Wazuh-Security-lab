@@ -31,7 +31,7 @@ You can learn more about Wazuh [Wazuh official website](https://wazuh.com)
 - [Tools Used](#tools-used)
 - [Configuration](#configuration)
 - [Queries](#queries)
-- [Dashboards](#dashboards)
+- [Dashboards](https://github.com/obah2008/Wazuh-Security-lab/blob/main/docs/Creating%20Dashboards.md)
 - [Acknowledgements](#acknowledgements)
 
 
