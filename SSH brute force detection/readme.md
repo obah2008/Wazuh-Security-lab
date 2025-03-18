@@ -131,6 +131,6 @@ Now It's time to respond to the attacks.
         sudo apt install fail2ban -y
         sudo systemctl enable --now fail2ban
 
-
+With Fail2Ban installed, this marks the completion of the SSH Brute-Force Detection subdomain.
 
 
