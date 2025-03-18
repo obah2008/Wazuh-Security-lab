@@ -102,7 +102,7 @@ However, the main goal was to generate "noise" and trigger security alerts for i
 
 ## Incident Response
 Since we've generated some "noise" with hydra, it's time to investigate and respond to the incident
-
+ 
 ### Detection 
 The first step in incident response is to detect any suspicious activity related to SSH login attempts.
 
@@ -114,4 +114,5 @@ The first step in incident response is to detect any suspicious activity related
 Head over to the Wazuh Dashboard, under Threat Detection, where we can see several failed SSH login attempts. 
 
 Now It's time to respond to the attacks.
-![image](https://github.com/user-attachments/assets/4701a9d6-4ee1-4892-909f-7e0096d0a6a5)
+![image](https://github.com/user-attachments/assets/5cca435d-1798-444b-bfcb-2d35d9b22934)
+
