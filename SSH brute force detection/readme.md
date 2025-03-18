@@ -100,4 +100,17 @@ This outcome was expected since SSH by default has an account lockout policy aft
 
 However, the main goal was to generate "noise" and trigger security alerts for incident response.
 
-Incident Response
+## Incident Response
+Since we've generated some "noise" with hydra, it's time to investigate and respond to the incident
+
+### Detection 
+The first step in incident response is to detect any suspicious activity related to SSH login attempts.
+
+### Check for failed login attempts
+  On the target machine, use the following command to check authentication logs for failed SSH login attempts
+    ``` bash
+     sudo grep "Failed password" /var/log/auth.log
+
+Head over to the Wazuh Dashboard, under Threat Detection, where we can see several failed SSH login attempts. 
+
+Now It's time to respond to the attacks.
