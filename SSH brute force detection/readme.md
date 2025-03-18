@@ -83,7 +83,7 @@ Like I mentioned earlier I'll be using Nmap a powerful reconnaissance tool.
 Now that SSH is up and running, it's time to simulate an attack.
 
 - Change Password:
- Since strong passwords take too long to brute-force, I'll change mine to something weak:
+ Since strong passwords take too long to brute-force, I'll change mine to something weak:j
 
 
 
