@@ -126,7 +126,7 @@ Now It's time to respond to the attacks.
       sudo ufw deny from <attacker-ip>
 ![image](https://github.com/user-attachments/assets/77b77241-dafa-4e8a-a70a-b6a211556e14)
 
-- Install Fail2ban to prevent brute-force attacks from other Threat actors: Fail2ban 
+- Install Fail2ban to prevent brute-force attacks from other Threat actors: Fail2ban is a security tool that prevents several failed login attempts
 
         sudo apt install fail2ban -y
         sudo systemctl enable --now fail2ban
