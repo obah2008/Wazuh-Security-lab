@@ -32,7 +32,7 @@ You can learn more about Wazuh [Wazuh official website](https://wazuh.com)
 - [Configuration](https://github.com/obah2008/Wazuh-Security-lab/tree/main/docs)
 - [Dashboards](https://github.com/obah2008/Wazuh-Security-lab/blob/main/docs/Creating%20Dashboards.md)
 - [SOAR implemetation]()
-- [FIM implementation]()
+- [FIM implementation](https://github.com/obah2008/Wazuh-Security-lab/tree/main/fim_implementation)
 - [SSH Brute-force detection]()
 - [Acknowledgements](#acknowledgements)
 
