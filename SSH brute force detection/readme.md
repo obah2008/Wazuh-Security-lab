@@ -114,3 +114,4 @@ The first step in incident response is to detect any suspicious activity related
 Head over to the Wazuh Dashboard, under Threat Detection, where we can see several failed SSH login attempts. 
 
 Now It's time to respond to the attacks.
+![image](https://github.com/user-attachments/assets/4701a9d6-4ee1-4892-909f-7e0096d0a6a5)
