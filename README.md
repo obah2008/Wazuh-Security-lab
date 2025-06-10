@@ -34,7 +34,6 @@ You can learn more about Wazuh [Wazuh official website](https://wazuh.com)
 - [SOAR implemetation]()
 - [FIM implementation](https://github.com/obah2008/Wazuh-Security-lab/tree/main/fim_implementation)
 - [SSH Brute-force detection](https://github.com/obah2008/Wazuh-Security-lab/blob/main/SSH%20brute%20force%20detection/readme.md)
-- [Acknowledgements](#acknowledgements)
 
 
 ## Objectives 
